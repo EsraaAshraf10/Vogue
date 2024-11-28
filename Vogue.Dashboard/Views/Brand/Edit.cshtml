@@ -1,0 +1,28 @@
+﻿@model ProductBrand
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1 style="text-align: center">Edit Brand</h1>
+
+
+<div asp-validation-summary="All" class="text-danger"></div>
+<form class="mt-4" asp-action="Edit" method="post" style="margin-left:30px; margin-right:30px">
+
+    <input asp-for="Id" class="form-control" hidden />
+    <div class="form-group mt-2">
+        <label asp-for="Name" class="form-control"></label>
+        <input asp-for="Name" class="form-control" />
+        <div class="input-group mt-2 justify-content-center">
+
+            <button type="submit" class="btn btn-success m-2">Save</button>
+            <a class="btn btn-secondary m-2 " asp-action="Index">Back To List</a>
+
+
+        </div>
+
+
+    </div>
+
+
+</form>

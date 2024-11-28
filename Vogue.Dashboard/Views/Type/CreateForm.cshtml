@@ -1,0 +1,15 @@
+﻿@model ProductType
+
+
+<form method="post" asp-action="Create">
+	<div class="input-group mb-2">
+		<div style="margin-left: 10px">
+			<input asp-for="Name" class="form-control" placeholder="Enter Type Name"
+				   style="border-radius: 20px; width: 200px; margin-right:20px" />
+		</div>
+		<div class="input-group-append">
+			<button type="submit" class="btn btn-outline-primary">Add New Type</button>
+		</div>
+	</div>
+	<span asp-validation-for="Name" class="text-danger"></span>
+</form>

@@ -1,0 +1,16 @@
+﻿@model Order
+<form method="post" asp-action="GetUserOrders">
+	<div class="input-group mb-2">
+		<div style="margin-left: 15px">
+			<input asp-for="BuyerEmail" class="form-control" placeholder="Search By Buyer Email"
+				   style="border-radius: 20px; width: 200px; margin-right:20px" />
+		</div>
+
+		<div class="input-group-append">
+			<button type="submit" class="btn btn-outline-success" style="border-radius: 5px; margin-left:10px;">
+				Search
+			</button>
+		</div>
+	</div>
+	<span asp-validation-for="BuyerEmail" class="text-danger"></span>
+</form>
